@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        {% if page.title %}
+        {{ page.title }} &middot; {{ site.title }}
+        {% else %}
+        {{ site.title }} &middot; {{ site.tagline }}
+        {% endif %}
+    </title>
+
+	{% if jekyll.environment == "production" %}
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//analytics.dotsh.no/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+	{% endif %}
+
+    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}assets/favicon.png"/>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>{{ site.title }}</h1>
+
+        {% include navbar.html %}
+    </header>
+
+    <div class="container">
+
+        <section class="main_content">
+
+            {{ content }}
+
+        </section>
+
+        <section class="sidebar">
+
+            {% include sidebar.html %}
+
+        </section>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; {{ "today" | date: "%Y" }} - dotsh.no</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#000"
+                },
+                "button": {
+                    "background": "#f1d600"
+                }
+            },
+            "theme": "classic",
+            "content": {
+                "href": "/policy"
+            }
+        });
+    </script>
+</body>
+</html>

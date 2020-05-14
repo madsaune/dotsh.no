@@ -1,0 +1,282 @@
+@import "_normalize";
+@import "_syntax";
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: "Segoe UI VSS (Regular)","Segoe UI","-apple-system",BlinkMacSystemFont,Roboto,"Helvetica Neue",Helvetica,Ubuntu,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    min-height: 100vh;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+    padding: 0.625rem;
+}
+
+th {
+    border-bottom: 3px solid #F8F8F8;
+    padding: 0.625rem;
+}
+
+td {
+    border-bottom: 1px solid #f8f8f8;
+    padding: 0.625rem;
+}
+
+blockquote {
+    background: #ffc107;
+    margin: 0;
+    padding: 1.25rem;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, ol {
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+}
+
+header {
+    background: #262626;
+    padding: 10px 40px;
+    overflow: hidden;
+    margin-bottom: 1.429rem;
+}
+
+header::after {
+    content: "";
+    clear: both;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 24px;
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 5px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main_content {
+    width: 100%;
+}
+
+.sidebar {
+    width: 100%;
+}
+
+.widget {
+    padding: 0;
+}
+
+.contact_card {
+    background: #668623;
+    padding: 1.25rem 0 3.75rem 0;
+    color: #FFFFFF;
+}
+
+.contact_card--img {
+    width: 6.875rem;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.contact_card--name {
+    text-align: center;
+}
+
+.contact_card--bio {
+    width: 12.5rem;
+    text-align: center;
+    font-size: .875rem;
+    margin: 0 auto;
+}
+
+.contact_card--social-links {
+    list-style: none;
+    margin: 1.125rem 0;
+    padding: 0;
+    text-align: center;
+}
+
+.contact_card--social-links li {
+    display: inline-block;
+    border-right: 1px solid #FFFFFF;
+    padding: 0 0.625rem;
+    margin: 0;
+}
+
+.contact_card--social-links li:last-child {
+    border-right: none;
+}
+
+.contact_card--social-links li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.contact_card--social-links li a:hover {
+    text-decoration: underline;
+}
+
+.tag_list {
+    list-style: none;
+    padding: 0;
+}
+
+.article {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #737373;
+}
+
+.article img {
+    width: 100%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+}
+
+.article:last-child {
+    border-bottom: none;
+}
+
+.article--heading {
+    margin-bottom: 0.625rem;
+}
+
+.article--heading a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.article--heading a:hover {
+    text-decoration: underline;
+}
+
+.article--datetime {
+    font-size: .8rem;
+    margin-top: 0;
+}
+
+.article--tag_list {
+    list-style: none;
+    margin: 0.625rem;
+    padding: 0;
+}
+
+.article--tag_list li {
+    display: inline-block;
+    background: #f4f4f4;
+    color: #262626;
+    text-decoration: none;
+    padding: 0.3125rem;
+    font-size: .7rem;
+}
+
+.archive-list {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.highlight pre {
+    overflow-x: scroll;
+    padding: 1.25rem;
+}
+
+
+code.highlighter-rouge {
+    background: #282a36;
+    color: #f8f8f2;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+}
+
+footer {
+    clear: both;
+    background: #262626;
+    color: #ffffff;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-right: 1.25rem;
+}
+
+@media only screen and (min-width: 1080px) {
+    body {
+        padding-bottom: 5rem;
+    }
+
+    .container {
+        width: 1080px;
+    }
+
+    p, h1, h2, h3, h4, h5, h6 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .main_content {
+        width: 51.25rem;
+        padding-right: 1.875rem;
+        float: left;
+    }
+
+    .sidebar {
+        width: 16.25rem;
+        float: right;
+    }
+
+    .widget {
+        padding: 0 1.25rem;
+    }
+
+    .contact_card {
+        padding-bottom: 1.25rem;
+    }
+
+    .article--tag_list {
+        margin: 0;
+    }
+}

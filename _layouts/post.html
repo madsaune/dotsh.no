@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<article class="article">
+    <h1 class="article--heading">{{ page.title }}</h1>
+
+    <p class="article--datetime">{{ page.date | date: "%A, %B %d, %Y" }}</p>
+
+    <div class="article--body">
+        {{ content }}
+    </div>
+
+    <ul class="article--tag_list">
+        {% for tag in post.tags %}
+        <li>{{ tag[0]}}</li>
+        {% endfor %}
+    </ul>
+</article>

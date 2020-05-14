@@ -1,0 +1,8 @@
+# Ignore docs files
+_site
+.ruby-version
+.jekyll-cache
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+_drafts
