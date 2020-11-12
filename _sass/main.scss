@@ -45,7 +45,8 @@ p, h1, h2, h3, h4, h5, h6, ul, ol {
 }
 
 header {
-    background: #262626;
+    // background: #262626;
+    background: #ffffff;
     padding: 10px 40px;
     overflow: hidden;
     margin-bottom: 1.429rem;
@@ -57,7 +58,8 @@ header::after {
 }
 
 header h1 {
-    color: #ffffff;
+    // color: #ffffff;
+    color: #487ddb;
     margin: 0;
     font-size: 24px;
     float: left;
@@ -84,12 +86,20 @@ header nav ul li:last-child {
 }
 
 header nav ul li a {
-    color: #ffffff;
+    // color: #ffffff;
+    color: #487ddb;
     text-decoration: none;
 }
 
 header nav ul li a:hover {
-    border-bottom: 2px solid #ffffff;
+    // border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #487ddb;
+}
+
+.page-title {
+    color: #2458b5;
+    font-size: 4rem;
+    margin-top: 0;
 }
 
 .container {
@@ -111,7 +121,8 @@ header nav ul li a:hover {
 }
 
 .contact_card {
-    background: #668623;
+    // background: #668623;
+    background: #487ddb;
     padding: 1.25rem 0 3.75rem 0;
     color: #FFFFFF;
 }
@@ -167,10 +178,12 @@ header nav ul li a:hover {
 }
 
 .article {
-    margin-bottom: 1.25rem;
-    padding-bottom: 1.25rem;
+    // margin-bottom: 1.25rem;
+    margin-bottom: 4.55rem;
+    padding-bottom: 1.438rem;
     border-bottom: 1px solid #737373;
     font-size: 1.438rem;
+    color: #172847;
 }
 
 .article img {
@@ -178,17 +191,33 @@ header nav ul li a:hover {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
 }
 
+.article a,
+.archive-list a {
+    color: #2658b5;
+}
+
+.article a:hover,
+.archive-list a:hover {
+    color: #183b7a;
+}
+
 .article:last-child {
     border-bottom: none;
 }
 
 .article--heading {
+    margin-top: 0;
     margin-bottom: 0.625rem;
     font-size: 4rem;
+    // color: #487ddb;
+    color: #2458b5;
+    font-family: "Montserrat";
 }
 
 .article--heading a {
-    color: #000000;
+    // color: #000000;
+    // color: #487ddb;
+    color: #2458b5;
     text-decoration: none;
 }
 
@@ -220,6 +249,7 @@ header nav ul li a:hover {
 .archive-list {
     margin-bottom: 1.25rem;
     padding-bottom: 1.25rem;
+    font-size: 1.438rem;
 }
 
 .highlight pre {
