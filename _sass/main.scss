@@ -4,15 +4,15 @@
 * { box-sizing: border-box; }
 
 body {
-    font-family: "Segoe UI VSS (Regular)","Segoe UI","-apple-system",BlinkMacSystemFont,Roboto,"Helvetica Neue",Helvetica,Ubuntu,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: "Source Sans Pro", "Segoe UI VSS (Regular)","Segoe UI","-apple-system",BlinkMacSystemFont,Roboto,"Helvetica Neue",Helvetica,Ubuntu,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     min-height: 100vh;
     position: relative;
-    font-size: 14px;
     line-height: 1.5;
 }
 
 h2 {
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 2.25rem;
 }
 
 table {
@@ -170,6 +170,7 @@ header nav ul li a:hover {
     margin-bottom: 1.25rem;
     padding-bottom: 1.25rem;
     border-bottom: 1px solid #737373;
+    font-size: 1.438rem;
 }
 
 .article img {
@@ -183,6 +184,7 @@ header nav ul li a:hover {
 
 .article--heading {
     margin-bottom: 0.625rem;
+    font-size: 4rem;
 }
 
 .article--heading a {
@@ -195,8 +197,9 @@ header nav ul li a:hover {
 }
 
 .article--datetime {
-    font-size: .8rem;
+    font-size: 1rem;
     margin-top: 0;
+    font-style: italic;
 }
 
 .article--tag_list {
@@ -210,8 +213,8 @@ header nav ul li a:hover {
     background: #f4f4f4;
     color: #262626;
     text-decoration: none;
-    padding: 0.3125rem;
-    font-size: .7rem;
+    padding: 0.5rem;
+    font-size: .9rem;
 }
 
 .archive-list {
@@ -222,6 +225,7 @@ header nav ul li a:hover {
 .highlight pre {
     overflow-x: scroll;
     padding: 1.25rem;
+    font-size: 16px;
 }
 
 
