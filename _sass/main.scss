@@ -137,8 +137,6 @@ header nav ul li a:hover {
     background: #487ddb;
     padding: 1.25rem 0 3.75rem 0;
     color: #FFFFFF;
-    border-top-left-radius: 8px;
-    border-bottom-right-radius: 8px;
 }
 
 .contact_card--img {
@@ -155,9 +153,9 @@ header nav ul li a:hover {
 }
 
 .contact_card--bio {
-    width: 12.5rem;
+    width: 25rem;
     text-align: center;
-    font-size: .875rem;
+    font-size: 1.438rem;
     margin: 0 auto;
 }
 
@@ -329,6 +327,13 @@ footer {
 
     .contact_card {
         padding-bottom: 1.25rem;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .contact_card--bio {
+        width: 12.5rem;
+        font-size: .875rem;
     }
 
     .article--tag_list {
