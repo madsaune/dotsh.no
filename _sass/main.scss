@@ -12,7 +12,18 @@ body {
 
 h2 {
     font-weight: 600;
-    font-size: 2.25rem;
+    font-size: 2.938rem;
+    line-height: 4.625rem;
+}
+
+h3 {
+    font-size: 2.313rem;
+    line-height: 3.688rem;
+}
+
+h4 {
+    font-size: 1.813rem;
+    line-height: 3rem;
 }
 
 table {
@@ -98,7 +109,8 @@ header nav ul li a:hover {
 
 .page-title {
     color: #2458b5;
-    font-size: 4rem;
+    font-size: 3.75rem;
+    line-height: 5.813rem;
     margin-top: 0;
 }
 
@@ -125,6 +137,8 @@ header nav ul li a:hover {
     background: #487ddb;
     padding: 1.25rem 0 3.75rem 0;
     color: #FFFFFF;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .contact_card--img {
@@ -208,7 +222,8 @@ header nav ul li a:hover {
 .article--heading {
     margin-top: 0;
     margin-bottom: 0.625rem;
-    font-size: 4rem;
+    font-size: 3.75rem;
+    line-height: 5.813rem;
     // color: #487ddb;
     color: #2458b5;
     font-family: "Montserrat";
@@ -229,6 +244,10 @@ header nav ul li a:hover {
     font-size: 1rem;
     margin-top: 0;
     font-style: italic;
+}
+
+.article--body {
+    line-height: 39px;
 }
 
 .article--tag_list {
