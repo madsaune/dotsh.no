@@ -14,13 +14,13 @@ paginate:            5
 # About/contact
 author:
   name:              Mads Moi-Aune
-  url:               https://twitter.com/dotsh_no
+  url:               https://twitter.com/dotpwsh
   email:             madsmoiaune@gmail.com
   description:       "I'm an IT consultant based in Norway. Huge fan of open-source and automatation. Love everything about scripting."
 
 # Social Media
 social_media:
-  twitter:          'dotsh_no'
+  twitter:          'dotpwsh'
   github:           'madsaune'
 
 markdown: kramdown
