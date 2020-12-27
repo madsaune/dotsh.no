@@ -1,27 +1,27 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
+permalink: pretty
 
 # Setup
-title:               dotsh
-tagline:             'About scripting and automation'
-description:         'A blog about scripting, Open-Source, Automation and some ServiceNow development.'
-url:                 https://dotsh.no
-baseurl:             '/'
-paginate:            5
+title: (dot)pwsh
+tagline: "About scripting and automation"
+description: "A blog about scripting, Open-Source, Automation and some ServiceNow development."
+url: https://dotpwsh.com
+baseurl: "/"
+paginate: 5
 
 # About/contact
 author:
-  name:              Mads Moi-Aune
-  url:               https://twitter.com/dotpwsh
-  email:             madsmoiaune@gmail.com
-  description:       "I'm an IT consultant based in Norway. Huge fan of open-source and automatation. Love everything about scripting."
+  name: Mads Moi-Aune
+  url: https://twitter.com/dotpwsh
+  email: madsmoiaune@gmail.com
+  description: "I'm an IT consultant based in Norway. Huge fan of open-source and automatation. Love everything about scripting."
 
 # Social Media
 social_media:
-  twitter:          'dotpwsh'
-  github:           'madsaune'
+  twitter: "dotpwsh"
+  github: "madsaune"
 
 markdown: kramdown
 kramdown:

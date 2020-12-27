@@ -36,7 +36,7 @@ az login
 This will try to open your browser and direct you to a login page, if not you will be instructed to go to [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin) and type in a token that is also provided.
 
 ```bash
-dotsh@demo:~$ az login
+dotpwsh@demo:~$ az login
 WARNING: To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code <TOKEN> to authenticate.
 ```
 
@@ -181,7 +181,7 @@ This command will create our function. You will be prompted for which template y
 Our project structure should now look like this.
 
 ```plaintext
-dotsh@demo:~$ tree .
+dotpwsh@demo:~$ tree .
 .
 ├ HelloFromOutside
 │   ├ function.json
@@ -216,9 +216,9 @@ This command might take some time to finish. Essentially this command will send 
 When it's finished publishing you will get, among other things, a "Invoke url" back. Copy this, and verify that your function is working. **NOTE: The code in the URI will differ from function to function**.
 
 ```bash
-dotsh@demo:~$ curl https://48aDF9HYfiWY-test-af.azurewebsites.net/api/HelloFromOutside?code=HmPfMj4ImBd7VwrL31IO47OZlLataj2A6LMw6mkQA4sbJSLQiEDtNm==&name=dotsh
+dotpwsh@demo:~$ curl https://48aDF9HYfiWY-test-af.azurewebsites.net/api/HelloFromOutside?code=HmPfMj4ImBd7VwrL31IO47OZlLataj2A6LMw6mkQA4sbJSLQiEDtNm==&name=dotpwsh
 
-Hello dotsh
+Hello dotpwsh
 ```
 
 ## Wrapping up
