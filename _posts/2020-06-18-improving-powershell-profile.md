@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Improving Your Powershell Profile"
+title: "Improving Your Powershell Profile (Windows)"
 tags: ['Powershell']
 published: true
 ---

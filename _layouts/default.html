@@ -2,50 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>
-        {% if page.title %}
-        {{ page.title }} &middot; {{ site.title }}
-        {% else %}
-        {{ site.title }} &middot; {{ site.tagline }}
-        {% endif %}
-    </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    {% if page.title %}
+    {{ page.title }} &middot; {{ site.title }}
+    {% else %}
+    {{ site.title }} &middot; {{ site.tagline }}
+    {% endif %}
+  </title>
 
-    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}assets/favicon.png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>{{ site.title }}</h1>
+  <header>
+    <h1><a href="/">{{ site.title }}</a></h1>
 
-        {% include navbar.html %}
-    </header>
+    {% include navbar.html %}
+  </header>
 
-    <div class="container">
-
-        <section class="main_content">
-
-            {{ content }}
-
-        </section>
-
-        <section class="sidebar">
-
-            {% include sidebar.html %}
-
-        </section>
+  <aside class="introduction">
+    <!-- <img class="introduction__image" src="/images/avatar.jpg" alt="Mads Moi-Aune"> -->
+    <div class="introduction__content">
+      <h2 class="introduction__title">Hei, I'm Mads 👋</h2>
+      <div class="introduction__body">
+        <p>I'm an DevOps Engineer from Norway 🇳🇴, spending my days writing code. I created this site as a personal
+          notebook, but hopefully you will find something interresting too.</p>
+        <p>You can reach me at <a href="https://twitter.com/dotpwsh">@dotpwsh</a></p>
+      </div>
     </div>
+  </aside>
 
-    <footer>
-        <p>Copyright &copy; {{ "today" | date: "%Y" }} - dotpwsh.com</p>
-    </footer>
+  <div class="container">
+
+    <section class="main_content">
+
+      {{ content }}
+
+    </section>
+
+  </div>
+
+  <footer>
+    <p>Copyright &copy; {{ "today" | date: "%Y" }} - dotpwsh.com</p>
+  </footer>
 </body>
 
 </html>
