@@ -15,10 +15,6 @@ body {
   line-height: 1.5;
 }
 
-a {
-  color: #77ffff;
-}
-
 h2 {
   font-weight: 600;
   font-size: 2.938rem;
@@ -137,9 +133,10 @@ header nav ul li a:hover {
 
 .page-title {
   color: #2458b5;
-  font-size: 3.75rem;
-  line-height: 5.813rem;
+  font-size: 3rem;
+  line-height: 4.813rem;
   margin-top: 0;
+  font-family: 'Montserrat';
 }
 
 .container {
@@ -150,6 +147,7 @@ header nav ul li a:hover {
 
 .main_content {
   width: 100%;
+  margin-top: 4.55rem;
 }
 
 .introduction {
@@ -157,7 +155,6 @@ header nav ul li a:hover {
   font-size: 1.438rem;
   color: #FFFFFF;
   padding: 4rem 0;
-  margin-bottom: 4.55rem;
 }
 
 .introduction__title {
@@ -167,6 +164,10 @@ header nav ul li a:hover {
 
 .introduction__content {
   margin: 0 auto;
+}
+
+.introduction a {
+  color: #77ffff;
 }
 
 .tag_list {
