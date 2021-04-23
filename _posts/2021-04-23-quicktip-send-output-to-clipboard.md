@@ -10,7 +10,7 @@ _NOTE: These commands are not Powershell spesific and will work in the same way 
 
 ## Windows
 
-In Windows we have a command called `clip`. We can either pass a file or pipe output tot his command and it will copy it to our clipboard.
+In Windows we have a command called `clip`. We can either pass a file or pipe output to this command and it will copy it to our clipboard.
 
 ### Piping
 
